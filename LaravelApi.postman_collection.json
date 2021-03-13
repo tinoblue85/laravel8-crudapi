@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "0be7ceec-3997-4a08-9942-447bf2bf5ef3",
+		"name": "LaravelApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "es",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/laravel-latihan/public/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-latihan",
+						"public",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "staff_name",
+							"value": "Altino",
+							"type": "text"
+						},
+						{
+							"key": "staff_email",
+							"value": "tinoblue85@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "staff_password",
+							"value": "tino1234",
+							"type": "text"
+						},
+						{
+							"key": "staff_hp",
+							"value": "083808475774",
+							"type": "text"
+						},
+						{
+							"key": "staff_alamat",
+							"value": "Jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/laravel-latihan/public/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-latihan",
+						"public",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "staff_name",
+							"value": "onyT",
+							"type": "text"
+						},
+						{
+							"key": "staff_email",
+							"value": "altino.ansaldo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "staff_password",
+							"value": "rahasia",
+							"type": "text"
+						},
+						{
+							"key": "staff_hp",
+							"value": "021123456",
+							"type": "text"
+						},
+						{
+							"key": "staff_alamat",
+							"value": "Jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/laravel-latihan/public/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-latihan",
+						"public",
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/laravel-latihan/public/api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-latihan",
+						"public",
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/laravel-latihan/public/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-latihan",
+						"public",
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
